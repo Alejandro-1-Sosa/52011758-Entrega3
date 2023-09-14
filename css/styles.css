@@ -1,0 +1,685 @@
+.jumbotron,
+.card-body,
+.container,
+.site-header {
+  font-family: 'Verdana', serif !important;
+}
+
+.jumbotron .display-4 {
+  font-weight: bold;
+}
+/*hover a nav Milagros*/
+nav a:hover {
+  text-decoration: none;
+  background-color: #f27600;
+  font-size: 17px;
+}
+
+.navbar{
+  background-color: #ff9100;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.jumbotron {
+  height: 50vh;
+  padding: 5em inherit;
+  margin-bottom: 0;
+  background-color: #53C0FB;
+  background: url('../img/cover_back.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px grey;
+}
+
+.jumbotron .lead {
+  font-size: 38px;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.site-header a {
+  color: white;
+  transition: ease-in-out color .15s;
+}
+
+.site-header .dropdown-menu a {
+  color: black;
+}
+
+.dropzone {
+  border: 2px dashed #0087F7;
+  border-radius: 5px;
+  background: white;
+}
+
+.img-fit {
+  max-height: 100%;
+}
+
+.alert {
+  position: fixed;
+  top: 80px;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+}
+
+.cursor-active {
+  cursor: pointer;
+}
+
+.left {
+  float: left;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+#spinner-wrapper {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1021;
+  display: none;
+}
+
+main {
+  min-height: calc(100vh - 210px);
+}
+
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.checked {
+  color: orange;
+}
+
+/*Codigo Franco*/
+
+.bd-placeholder-img {
+  filter: opacity(0.6);
+  width: 100%;
+  transition: 0.5s;
+}
+
+.col-md-4:hover .bd-placeholder-img {
+  filter: opacity(1);
+}
+
+.col-md-4:hover {
+  -webkit-transform:scale(1.3);transform:scale(0.9);
+  overflow:hidden;
+  filter: opacity(1);
+  
+}
+
+.col-md-4 {
+  transition: 0.5s;
+  flex: 0 0 22%; 
+}
+
+.row {
+  justify-content: center;
+  display: flex;
+}
+
+/*Css milagros*/
+.container_product{
+  display: flex;
+  align-items:center;
+  padding: 20px 0 20px 0;
+  width: auto;
+  border-radius: 7px;
+  margin: 12px;
+  }
+
+ #lista {
+    margin-top: 12px;
+  }
+  .container_product:nth-of-type(even){
+    background-color: #ffb14b48;
+  }
+
+.container_product:nth-of-type(odd){
+    background-color: #d1882979;
+    } 
+
+/*Contenedor de img y nombre*/
+.container_animado{
+  position: relative;
+  display: flex;
+}
+
+/*Con el position,top,left y transform lo centro,
+con el opacity lo oculto*/
+.texto-hover{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: opacity 0.3s ease; /*acelera gradualmente y luego desacelera gradualmente*/
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.container_animado img{
+  transform: translateX(100%); /*Lo mueve 100% a la derecha*/
+  transition-duration: 0.5s;
+border-radius: 10px;
+}
+
+/*Blurrear la imagen al hacerle hover*/
+.container_animado:hover img{
+  filter: blur(3px);
+  transform: translateX(0%); /*lo lleva al comienzo del div*/
+  transition: transform 0.5s ease;
+}
+
+/*Al texto-hover contenido en container_animado cuando paso por encima*/
+.container_animado:hover .texto-hover{
+  opacity: 0.8;
+}
+
+/*Al primer span enseguida luego del div container_animado*/
+.container_animado + span {
+  opacity: 0;
+}
+
+.container_animado:hover + span{
+  opacity: 1;
+  }
+
+  /*Span con id vendidos*/
+#vendidos {
+  font-size: smaller;
+  color: rgb(88, 87, 87);
+  position:absolute;
+  bottom: 0;
+  left: 200.5%;
+  text-align: center;
+}
+ /*span con clase*/
+.description {
+  font-size: 23px;
+  margin-left: 20px;
+ font-family: 'Arial Narrow Bold', sans-serif;
+ color: rgb(53, 53, 53);
+}
+
+/*Codigo Franco*/
+.container_product{
+  padding: 20px 0 20px 20px;
+  }
+
+/*Código de la Barra de Busqueda*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.search-container {
+  background-color: rgb(216, 216, 216);
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  float: initial;
+}
+
+#search-input {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 600px; /* Reducir el ancho para ajustar */
+}
+
+/* Filtros de busqueda */
+/* Cambia el color de fondo de los botones */
+.btn-light {
+  background-color: orange;
+  color: #333;
+}
+
+/* Cambia el estilo de los botones de filtro | filtrar  */
+#rangeFilterCount {
+  background-color: orange;
+  color: #fff;
+}
+/* Cambia el estilo de los botones de filtro | limpiar */
+#clearRangeFilter {
+  background-color: orange;
+  color: #fff; 
+  text-decoration: none;
+}
+
+/* Cambia el estilo del input de número */
+.form-control {
+  border: 3px solid orange;
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 30px;
+}
+
+/* Cambia el estilo del botón de ordenamiento seleccionado */
+.btn-check:checked + .btn {
+  background-color: #363636;
+  color: #fff;
+}
+
+
+/*Estilo para product-info.js*/
+/* Estilos para el título del producto */
+#titleProduct {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para la imagen principal del producto */
+#firstImage img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #007BFF;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  transition: border-color 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+#showImages {
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+#firstImage img:hover {
+  border-color: #007BFF;
+}
+
+/* Estilos para las imágenes adicionales del producto */
+#restImages span {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#restImages img {
+  max-height: 300px;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+#restImages {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 10px;
+}
+
+
+/* Aplica un efecto de zoom al el mouse (hover)*/
+#restImages img:hover{
+  border-radius: 10px;
+  border-color: #007BFF;
+  transform: scale(1.1);
+}
+
+.product-info {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/*Estilos para el precio del producto*/
+#priceProduct {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+/*Estilos para la descripción del producto*/
+#descriptionProduct {
+  margin-top: 10px;
+  color: #333;
+}
+
+/*Estilos para la cantidad vendida del producto*/
+#soldCountProduct {
+  color: #888;
+  font-size: 14px;
+}
+
+/* Estilos adicionales */
+h5 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Estilos para las imágenes de productos relacionados */
+.related-product img {
+  max-height: 150px;
+  display: block;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.2s ease; /* Transición suave de transformación */
+}
+
+/* Efecto hover para las imágenes */
+.related-product img:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% en hover */
+  border-color: #007BFF; /* Cambia el color del borde en hover */
+}
+
+
+ /*COLORES PARA IDENTIFICAR LOS ELEMENTOS*/
+  
+  
+  /*id comments*/
+
+#comments{
+  border: 0;
+  background-color: #e4e4e4;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 15px;
+  min-height: 80px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/*class headComment */
+
+/*class descriptionComment*/
+
+.descriptionComment{
+ color: #444;
+  background-color: #e4e4e4;
+  
+  
+}
+
+
+/*Clase nombre y fecha*/
+.name,
+.date {
+    display:inline;
+    padding: 8px 14px;
+   
+    
+   
+    
+}
+
+.name{
+  color: #DC7633 ;
+  
+}
+
+.date {
+  color: rgb(146, 141, 141); 
+  
+}
+
+
+/*clase del comentario*/
+.comment {
+color: #444;
+padding: 5px 14px;
+}
+
+/*codigo Franco, comentar*/
+.contenedor-comentarios {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+
+}
+
+.area-comentario {
+  border: 0;
+  background-color: #e4e4e4;
+  display: block;
+  width: 98%;
+  border-radius: 15px;
+  min-height: 80px;
+  max-height: 90px;
+  margin: 15px;
+}
+
+.boton-enviar {
+  background-color: #E59866;
+  border: 0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: #ffffff;
+  transition: background-color ease-in 180ms;
+  margin: 18px;
+}
+
+.boton-enviar:hover {
+  background-color: #DC7633 ;
+}
+
+.stars {
+  font-size: 20px;
+  padding: 18px;
+  float: right;
+  color: #444;
+  transition: all 0.2s ease;
+}
+
+
+.fas.fa-star.checked:nth-of-type(1)::after{
+content: "😣";
+position: relative;
+bottom: 25px;
+right: 20px;
+}
+
+.fas.fa-star.checked:nth-of-type(1).checked {
+  color: #c00000;
+}
+
+.fas.fa-star:nth-of-type(1):hover {
+  color: #c00000;
+  cursor: pointer;
+  }
+
+.fas.fa-star.checked:nth-of-type(2)::after{
+  content: "😕";
+  position: relative;
+  bottom: 25px;
+  right: 20px;
+  }
+
+  .fas.fa-star.checked:nth-of-type(2).checked {
+    color: #de2e03;
+  }
+
+  .fas.fa-star:nth-of-type(2):hover {
+    color: #de2e03;
+    cursor: pointer;
+    }
+
+  .fas.fa-star.checked:nth-of-type(3)::after{
+    content: "😐";
+    position: relative;
+    bottom: 25px;
+right: 20px;
+    }
+
+    .fas.fa-star.checked:nth-of-type(3).checked {
+      color: #fc4b08;
+    }
+
+    .fas.fa-star:nth-of-type(3):hover {
+      color: #fc4b08;
+      cursor: pointer;
+      }
+
+    .fas.fa-star.checked:nth-of-type(4)::after{
+      content: "🙂";
+      position: relative;
+      bottom: 25px;
+      right: 20px;
+      }
+
+      .fas.fa-star.checked:nth-of-type(4).checked {
+        color: #ff7c39;
+      }
+
+      .fas.fa-star:nth-of-type(4):hover {
+        color: #ff7c39;
+        cursor: pointer;
+        }
+
+      .fas.fa-star.checked:nth-of-type(5)::after{
+        content: "😃";
+        position: relative;
+        bottom: 25px;
+right: 20px;
+        }
+
+        .fas.fa-star.checked:nth-of-type(5).checked {
+          color: #ffa460;
+        }
+
+        .fas.fa-star:nth-of-type(5):hover {
+          color: #ffa460;
+          cursor: pointer;
+          }
+  
+.stars > input {
+  display: none;
+}
